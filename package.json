@@ -1,23 +1,22 @@
 {
-  "name": "back-end",
+  "name": "node",
   "version": "1.0.0",
-  "description": "Node",
+  "description": "Build Week Project\t",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mariannas-web/Back-end.git"
+    "url": "git+https://github.com/Team2-BW/Node.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Team2",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mariannas-web/Back-end/issues"
+    "url": "https://github.com/Team2-BW/Node/issues"
   },
-  "homepage": "https://github.com/mariannas-web/Back-end#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -33,5 +32,6 @@
   "devDependencies": {
     "cross-env": "^6.0.0",
     "nodemon": "^1.19.3"
-  }
+  },
+  "homepage": "https://github.com/Team2-BW/Node#readme"
 }
