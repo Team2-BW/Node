@@ -10,4 +10,14 @@ router.get('/', (req, res) => {
     })
 })
 
+router.post('/', (req, res) => {
+    const body = req.body
+    db('rooms').insert(body).then(response => {
+        res.status(200).json(response)
+    })
+    .catch(error => {
+        res.status(500).json({Message: "There was an error posting your data", error})
+    })
+})
+
 module.exports = router 

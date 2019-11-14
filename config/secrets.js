@@ -1,3 +1,3 @@
 module.exports = {
-  environment: process.env.NODE_ENV || 'our secret'
+  environment: process.env.NODE_ENV || 'oursecret'
 }
