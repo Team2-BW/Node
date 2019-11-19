@@ -5,10 +5,6 @@ exports.up = function(knex) {
       tbl.string('coordinates')
       tbl.string('name')
       tbl.string('description')
-      tbl.integer('n'),
-      tbl.integer('s'),
-      tbl.integer('e'),
-      tbl.integer('w')
   })
 };
 
