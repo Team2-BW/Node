@@ -10,6 +10,16 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/:id', (req, res) => {
+    const {id} = req.params
+    db('rooms').where({id}).then(response => {
+        res.status(200).json(response)
+    })
+    .catch(error => {
+        res.status(500).json({Message: "There was an error gathering your room data", error})
+    })
+})
+
 router.post('/', (req, res) => {
     const body = req.body
     db('rooms').insert(body).then(response => {
